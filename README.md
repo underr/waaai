@@ -1,6 +1,6 @@
 ## Installation
 
-`npm install waaai`
+`npm -g install waaai`
 
 ## Use
 
