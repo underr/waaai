@@ -10,6 +10,10 @@
     "url",
     "shortener"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/underr/waaai"
+  },
   "author": "under",
   "license": "WTFPL",
   "dependencies": {
