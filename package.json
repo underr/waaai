@@ -1,0 +1,19 @@
+{
+  "name": "waaai",
+  "version": "0.0.1",
+  "description": "link shortener for waa.ai",
+  "main": "waai.js",
+  "bin": {
+    "waaai": "./waaai.js"
+  },
+  "keywords": [
+    "url",
+    "shortener"
+  ],
+  "author": "under",
+  "license": "WTFPL",
+  "dependencies": {
+    "commander": "^2.6.0",
+    "request": "^2.51.0"
+  }
+}
