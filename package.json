@@ -18,6 +18,7 @@
   "license": "WTFPL",
   "dependencies": {
     "commander": "^2.6.0",
+    "open": "0.0.5",
     "request": "^2.51.0"
   }
 }
