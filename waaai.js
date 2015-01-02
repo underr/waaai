@@ -1,15 +1,13 @@
 #!/usr/bin/env node
 var program = require('commander');
 var request = require('request');
-var open = require("open");
 
 var validURl = /^(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/;
 
 program
-    .version('0.0.7')
+    .version('0.0.8')
     .description('link shortener for waa.ai')
     .option('-p, --private', 'Create a private link (e.g waa.ai/4gD4/ce42fd.jpg)')
-    .option('-o, --open', 'Open the shortened link on your default browser')
 
 program
     .command('*')
@@ -27,7 +25,6 @@ program
                     var kyoko = JSON.parse(body);
                     var akari = kyoko.data.url
                     console.log(akari);
-                    if (program.open) open(akari);                    
                 } else { 
                     console.log('Error when requesting URL');
                 }
