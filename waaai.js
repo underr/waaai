@@ -5,7 +5,7 @@ var request = require('request');
 var validURl = /^(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/;
 
 program
-.version('0.0.1')
+.version('0.0.3')
 .command('*')
 .description('Creates a short link for given URL on waa.ai')
 
