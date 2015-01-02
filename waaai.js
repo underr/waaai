@@ -5,14 +5,12 @@ var request = require('request');
 var validURl = /^(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/;
 
 program
-    .version('0.0.8')
-    .description('link shortener for waa.ai')
+    .version('0.0.9')
     .option('-p, --private', 'Create a private link (e.g waa.ai/4gD4/ce42fd.jpg)')
 
 program
     .command('*')
-    .description('Creates a short link for given URL on waa.ai')
-    .usage('[options] <url>')
+    .description('Create a short link for given URL on waa.ai')
     .action(function(env, options) {
         if (program.private) {
             key = '&private=true'
