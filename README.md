@@ -4,4 +4,4 @@
 
 ## Use
 
-`$ waaai https://github.com/underr/waaai/` => `http://waa.ai/4giF`
+`$ sudo waaai https://github.com/underr/waaai/` → `http://waa.ai/4giF`
