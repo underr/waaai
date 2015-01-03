@@ -3,9 +3,10 @@ var program = require('commander');
 var request = require('request');
 
 var validURl = /^(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/;
+var lb = "\n"
 
 program
-    .version('0.2.0')
+    .version('0.2.1')
     .option('-p, --private', 'Create a private link (e.g waa.ai/4gD4/ce42fd.jpg)')
     .option('-c, --custom <custom URL>', 'Create a custom link (must be between 5 and 30 characters long)', program.custom)
 
@@ -25,7 +26,7 @@ program
                 if (!error && response.statusCode === 200) {
                     var kyoko = JSON.parse(body);
                     var akari = kyoko.data.url
-                    console.log(akari);
+                    console.log(lb + akari + lb);
                 } else { 
                     if (program.custom) {
                         console.log('There was a error when requesting URL: custom URL already exists or it is too long/short.')
