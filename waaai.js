@@ -5,8 +5,9 @@ var request = require('request');
 var validURl = /^(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/;
 
 program
-    .version('0.1.2')
+    .version('0.2.0')
     .option('-p, --private', 'Create a private link (e.g waa.ai/4gD4/ce42fd.jpg)')
+    .option('-c, --custom <custom URL>', 'Create a custom link (must be between 5 and 30 characters long)', program.custom)
 
 program
     .command('*')
@@ -14,6 +15,8 @@ program
     .action(function(env, options) {
         if (program.private) {
             key = '&private=true'
+        } else if (program.custom) {
+            key = '&custom=' + program.custom;
         } else {
             key = ''
         }
@@ -24,7 +27,11 @@ program
                     var akari = kyoko.data.url
                     console.log(akari);
                 } else { 
-                    console.log('Error when requesting URL');
+                    if (program.custom) {
+                        console.log('There was a error when requesting URL: custom URL already exists or it is too long/short.')
+                    } else {
+                        console.log('Error when requesting URL');
+                    }
                 }
             });
         } else {
