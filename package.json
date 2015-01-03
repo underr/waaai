@@ -1,6 +1,6 @@
 {
   "name": "waaai",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "link shortener for waa.ai",
   "main": "waai.js",
   "bin": {
@@ -18,7 +18,6 @@
   "license": "WTFPL",
   "dependencies": {
     "commander": "^2.6.0",
-    "open": "0.0.5",
     "request": "^2.51.0"
   }
 }
