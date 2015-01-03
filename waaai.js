@@ -5,7 +5,7 @@ var request = require('request');
 var validURl = /^(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/;
 
 program
-    .version('0.1.0')
+    .version('0.1.1')
     .option('-p, --private', 'Create a private link (e.g waa.ai/4gD4/ce42fd.jpg)')
 
 program

@@ -1,7 +1,9 @@
 ## Installation
 
-`npm -g install waaai`
+`sudo npm -g install waaai`
 
 ## Usage
 
-`$ sudo waaai https://github.com/underr/waaai/` → `http://waa.ai/4giF`
+`$ waaai https://github.com/underr/waaai/`  ➔  `http://waa.ai/4giF`
+
+Private link: `$ waaai -p http://yuruyuri.com/ ` ➔   `http://waa.ai/4gh7/9cf648`
