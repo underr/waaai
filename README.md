@@ -1,3 +1,5 @@
+![travis](https://travis-ci.org/underr/waaai.svg?branch=master)
+
 ## Installation
 
 `sudo npm -g install waaai`
