@@ -6,7 +6,7 @@ var validURl = /^(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?
 var lb = "\n"
 
 program
-  .version('0.2.4')
+  .version('0.2.5')
   .option('-p, --private', 'Create a private link (e.g waa.ai/4gD4/ce42fd.jpg)')
   .option('-c, --custom <custom URL>', 'Create a custom link (must be between 5 and 30 characters long)', program.custom)
 
@@ -24,7 +24,6 @@ program
     if (env.match(validURl)) {
       request('http://api.waa.ai/shorten?url=' + env + key, function (error, response, body) {
         if (!error && response.statusCode === 200) {
-//          var kyoko = JSON.parse(body);
           var akari = JSON.parse(body).data.url
           console.log(lb + akari + lb);
         } else { 
