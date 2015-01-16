@@ -24,8 +24,8 @@ program
     if (env.match(validURl)) {
       request('http://api.waa.ai/shorten?url=' + env + key, function (error, response, body) {
         if (!error && response.statusCode === 200) {
-          var kyoko = JSON.parse(body);
-          var akari = kyoko.data.url
+//          var kyoko = JSON.parse(body);
+          var akari = JSON.parse(body).data.url
           console.log(lb + akari + lb);
         } else { 
           if (program.custom) {
