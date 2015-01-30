@@ -1,10 +1,10 @@
 ![travis](https://travis-ci.org/underr/waaai.svg?branch=master)
 
-## Installation
+## Install
 
 `sudo npm -g install waaai`
 
-## Usage
+## Use
 
 `$ waaai https://github.com/underr/waaai/`  ➔  `http://waa.ai/4giF`
 
