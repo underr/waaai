@@ -12,3 +12,6 @@ Private link: `$ waaai -p http://yuruyuri.com/ ` ➔   `http://waa.ai/4gh7/9cf64
 
 Custom link: `$ waaai -c smokeeveryday http://420.moe/` ➔  `http://waa.ai/smokeeveryday`
 
+## Python version:
+
+[Here.](https://gist.github.com/underr/1e0730b38202b63b40e9)
