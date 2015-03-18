@@ -26,9 +26,16 @@ waaai.link({
 .then(function(result) {
   console.log(result) + '\n' // outputs http://waaai/ayanami-rei
 });
+
 // Or the hated yet traditional callbacks:
 waaai.link({url: 'http://rei-ayanami.com/rei/'}, function(error, result) {
   if (!error) console.log(result)
+});
+
+// Get info from a short code
+waaai.info('4iLm')
+.then(function (result) {
+  console.log(result)
 });
 ```
 

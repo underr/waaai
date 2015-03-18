@@ -21,4 +21,17 @@ var createLink = function(params, callback) {
   return deferred.promise;
 }
 
+var getInfo = function(code, callback) {
+  var deferred = Q.defer();
+  needle.get('http://api.waa.ai/info/' + code, function(err, response) {
+    if (!err) {
+      var info = response.body.data;
+      deferred.resolve(info);
+    }
+  });
+  deferred.promise.nodeify(callback);
+  return deferred.promise;
+}
+
 module.exports.link = createLink;
+module.exports.info = getInfo;
