@@ -24,7 +24,7 @@ waaai.link({
   custom: 'ayanami-rei'
 })
 .then(function(result) {
-  console.log(result) + '\n' // outputs http://waaai/ayanami-rei
+  console.log(result) + '\n' // outputs http://waa.ai/ayanami-rei
 });
 
 // Or the hated yet traditional callbacks:
