@@ -36,7 +36,7 @@ waaai.link({url: 'http://rei-ayanami.com/rei/'}, function(error, result) {
 
 * **url**: string (required)
 * **custom**: string
-* **private**s: boolean
+* **private**: boolean
 
 ## Python version
 
