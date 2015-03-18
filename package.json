@@ -1,14 +1,15 @@
 {
   "name": "waaai",
-  "version": "0.2.8",
+  "version": "0.3.0",
   "description": "link shortener for waa.ai",
   "main": "waai.js",
   "bin": {
-    "waaai": "./waaai.js"
+    "waaai": "./cli.js"
   },
   "keywords": [
     "url",
-    "shortener"
+    "shortener",
+    "anime"
   ],
   "repository": {
     "type": "git",
@@ -17,7 +18,8 @@
   "author": "under",
   "license": "WTFPL",
   "dependencies": {
-    "commander": "^2.6.0",
-    "request": "^2.51.0"
+    "needle": "^0.8.2",
+    "q": "^1.2.0",
+    "yargs": "^3.5.4"
   }
 }
