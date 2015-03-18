@@ -1,6 +1,6 @@
 ![travis](https://travis-ci.org/underr/waaai.svg?branch=master)
 
-## Install
+## Setup
 
 Use `sudo npm -g install waaai` to install the CLI program
 
@@ -8,9 +8,9 @@ Use `sudo npm -g install waaai` to install the CLI program
 
 `$ waaai https://github.com/underr/waaai/`  ➔  `http://waa.ai/4giF`
 
-Private link: `$ waaai -p http://yuruyuri.com/ ` ➔   `http://waa.ai/4gh7/9cf648`
+**Private link**: `$ waaai -p http://yuruyuri.com/ ` ➔   `http://waa.ai/4gh7/9cf648`
 
-Custom link: `$ waaai -c smokeeveryday http://420.moe/` ➔  `http://waa.ai/smokeeveryday`
+**Custom link**: `$ waaai -c smokeeveryday http://420.moe/` ➔  `http://waa.ai/smokeeveryday`
 
 ## API Usage
 
@@ -34,9 +34,9 @@ waaai.link({url: 'http://rei-ayanami.com/rei/'}, function(error, result) {
 
 ### Parameters
 
-* url: string (required)
-* custom: string
-* private: boolean
+* **url**: string (required)
+* **custom**: string
+* **private**s: boolean
 
 ## Python version
 
