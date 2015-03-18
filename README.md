@@ -39,7 +39,7 @@ waaai.info('4iLm')
 });
 ```
 
-### Parameters
+### Parameters for waaai.link
 
 * **url**: string (required)
 * **custom**: string
