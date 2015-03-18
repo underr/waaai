@@ -2,7 +2,7 @@
   "name": "waaai",
   "version": "0.3.4",
   "description": "link shortener for waa.ai",
-  "main": "waai.js",
+  "main": "waaai.js",
   "bin": {
     "waaai": "./cli.js"
   },
