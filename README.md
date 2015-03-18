@@ -23,7 +23,7 @@ waaai.link({
   url: 'http://rei-ayanami.com/rei/',
   custom: 'ayanami-rei'
 })
-.then(function (result) {
+.then(function(result) {
   console.log(result) + '\n' // outputs http://waaai/ayanami-rei
 });
 // Or the hated yet traditional callbacks:
