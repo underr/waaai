@@ -1,6 +1,6 @@
 {
   "name": "waaai",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "link shortener for waa.ai",
   "main": "waaai.js",
   "bin": {
