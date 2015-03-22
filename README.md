@@ -8,9 +8,9 @@ Use `sudo npm -g install waaai` to install the CLI program
 
 `$ waaai https://github.com/underr/waaai/`  ➔  `http://waa.ai/4giF`
 
-**Private link**: `$ waaai http://yuruyuri.com/ -p ` ➔   `http://waa.ai/4gh7/9cf648`
+**Private link**: `$ waaai http://yuruyuri.com/ -p  ` ➔   `http://waa.ai/4gh7/9cf648`
 
-**Custom link**: `$ waaai smokeeveryday -c http://420.moe/` ➔  `http://waa.ai/smokeeveryday`
+**Custom link**: `$ waaai http://420.moe/ -c smokeeveryday  ` ➔  `http://waa.ai/smokeeveryday`
 
 **Info from short code**: `$ waaai -i 4giF`
 
