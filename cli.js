@@ -13,7 +13,7 @@ var argv = require('yargs')
   .argv;
 
 var validURL = /^(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/;
-var link = argv._[0]
+var link = argv._[0];
 
 if (!link) {
   console.log('You must give a URL.');
