@@ -12,6 +12,13 @@ var argv = require('yargs')
   .epilog('http://waaa.ai · https://github.com/underr/waaai')
   .argv;
 
+var validURL = /^(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/;
+
+if (!argv._[0].match(validURL)) {
+  console.log('Not a valid URL.')
+  process.exit(1);
+}
+
 if (!argv.c && !argv.p) {
   waaai.link({url: argv._[0]})
     .then(function(result) {
@@ -28,3 +35,5 @@ if (!argv.c && !argv.p) {
       console.log(result);
     });
 }
+
+// TODO: sqlite
