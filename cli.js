@@ -32,7 +32,7 @@ if (argv.i) {
   link = argv._[0];
 
   if (!link) {
-    console.log('You must give a URL.');
+    console.log('You must give a URL. Use --help for usage.');
     process.exit(1);
   } else if (!link.match(validURL)) {
     console.log('Not a valid URL.')
