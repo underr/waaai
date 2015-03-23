@@ -1,6 +1,6 @@
 {
   "name": "waaai",
-  "version": "0.4.9",
+  "version": "0.4.10",
   "description": "API and CLI tool for waa.ai",
   "main": "waaai.js",
   "bin": {
