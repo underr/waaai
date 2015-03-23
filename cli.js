@@ -17,7 +17,7 @@ var argv = require('yargs')
   .epilog('http://waaa.ai · https://github.com/underr/waaai')
   .argv;
 
-var validURL = /^(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/;
+var validURL = /^(http|ftp|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/;
 
 if (argv.i) {
   waaai.info(argv.i)
