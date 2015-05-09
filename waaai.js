@@ -9,7 +9,7 @@ var createLink = function(params, callback) {
    } else if (!params.private) {
      params.private = false;
    }
-   needle.post('http://api.waa.ai/shorten', params, function(err, response) {
+   needle.post('https://api.waa.ai/shorten', params, function(err, response) {
     if (!err) {
       var link = response.body.data.url;
       deferred.resolve(link);
@@ -23,7 +23,7 @@ var createLink = function(params, callback) {
 
 var getInfo = function(code, callback) {
   var deferred = Q.defer();
-  needle.get('http://api.waa.ai/info/' + code, function(err, response) {
+  needle.get('https://api.waa.ai/info/' + code, function(err, response) {
     if (!err) {
       var info = response.body.data;
       deferred.resolve(info);
